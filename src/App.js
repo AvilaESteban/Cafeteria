@@ -30,14 +30,15 @@ function App() {
   const consultarApi = async()=>{
     try{
      //  operacion get
-       const respuesta = await fetch('http://localhost:4002/api/cafeteria')
-       console.log(respuesta);
+       const respuesta = await fetch('http://localhost:4002/api/productos')
+      //  console.log(respuesta);
        const resultado = await respuesta.json();
        console.log(resultado);
        // guardar datos en  el  state
-       setProductos(resultado)
+       setProductos(resultado.productos)
 
     }catch(error){
+      setProductos([])
       console.log(error)
     }
   }

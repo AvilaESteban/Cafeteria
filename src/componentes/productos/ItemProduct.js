@@ -8,7 +8,7 @@ import { faTrash, faEdit } from '@fortawesome/free-solid-svg-icons'
 
 const ItemProduct = (props) => {
 
-    const eliminarProducto = (id) => {
+    const eliminarProducto = (_id) => {
       Swal.fire({
          title: 'Estas seguro de eliminar el producto?',
          text: "No puedes recuperar un producto eliminado!",
@@ -27,7 +27,7 @@ const ItemProduct = (props) => {
                      "Content-Type": "application/json"
                   }
                }
-              const respuesta = await fetch(`http://localhost:4002/api/cafeteria/${id}` , cabecera);
+              const respuesta = await fetch(`http://localhost:4002/api/productos/${_id}` , cabecera);
               console.log(respuesta);
               if(respuesta.status === 200){
                  props.setRecargarProducto(true);

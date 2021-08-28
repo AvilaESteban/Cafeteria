@@ -49,7 +49,7 @@ const EditarProductos = (props) => {
             },
             body: JSON.stringify(productoModificado)
           }
-          const consulta = await fetch(`http://localhost:4002/api/cafeteria/${props.producto._id}`,cabecera)
+          const consulta = await fetch(`http://localhost:4002/api/productos/${props.producto._id}`,cabecera)
           console.log(consulta)
           if(consulta.status === 200){
             props.setRecargarProducto(true);

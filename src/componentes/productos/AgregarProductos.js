@@ -43,9 +43,9 @@ const AgregarProductos = (props) => {
            },
            body: JSON.stringify(datos)
        }
-       const resultado = await fetch("http://localhost:4002/api/cafeteria", cabecera)  
+       const resultado = await fetch("http://localhost:4002/api/productos", cabecera)  
        console.log(resultado);
-       if(resultado.status === 201){
+       if(resultado.status === 200){
           props.setRecargarProducto(true)
            Swal.fire(
                'Producto Agregado Exitosamente',
