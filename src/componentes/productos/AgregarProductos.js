@@ -65,7 +65,9 @@ const AgregarProductos = (props) => {
         <>
            <section className='container text-center'>
          <Form  onSubmit={handleSubmit}>
-            <h2 className='my-4 text-dark text-center' > Agregar Nuevo Producto</h2>
+           <br></br>
+           <br></br>
+            <h2 className='my-4 p-5 text-dark text-center' > Agregar Nuevo Producto</h2>
             {
                 (error) ? (<Alert variant={'danger'} > Todos los campos son  obligatorios</Alert> ) : null
             }

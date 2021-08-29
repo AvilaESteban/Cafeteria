@@ -48,7 +48,7 @@ function App() {
     <>
     <Router >
        <Header/>
-       <Banner/>
+       {/* <Banner/> */}
       <Switch>
         <Route exact path='/'>
           <Inicio/>

@@ -1,0 +1,92 @@
+
+
+  .body-fo {
+    width: 100vw;
+    height: 100px;
+    background: #313f47;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .body-fo:hover, .bar:hover{
+      background: rgb(221, 107, 107);
+  }
+ 
+  .social-media-bar {
+  /*   width: 200px; */
+    height: 50px;
+  /*   background: #fff; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .social-media {
+    margin: 0 10px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .social-media a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    color: #8b6556;
+    font-size: 1.2rem;
+  }
+  
+  .social-media a > i {
+    transition: all 0.4s ease;
+  }
+  
+  .social-media a:hover > i {
+    transform: scale(0.8);
+  }
+  
+  .social-media a:hover ~ .bar-top {
+    transform: rotate(-20deg);
+  }
+  
+  .social-media a:hover ~ .bar-right {
+    transform: rotate(70deg);
+  }
+  
+  .social-media a:hover ~ .bar-bottom {
+    transform: rotate(-20deg);
+  }
+  
+  .social-media a:hover ~ .bar-left {
+    transform: rotate(70deg);
+  }
+  
+  .bar {
+    width: 40px;
+    height: 2px;
+    background: hsl(0, 11%, 89%);
+    position: absolute;
+    transition: all 0.4s ease;
+  }
+  
+  .bar-top {
+    top: 0;
+  }
+  
+  .bar-right {
+    top: 19px;
+    right: -19px;
+    transform: rotate(90deg);
+  }
+  
+  .bar-bottom {
+    bottom: 0;
+  }
+  
+  .bar-left {
+    top: 19px;
+    left: -19px;
+    transform: rotate(90deg);
+  }

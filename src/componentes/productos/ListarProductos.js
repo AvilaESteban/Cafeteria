@@ -9,7 +9,9 @@ const ListarProductos = (props) => {
     return(
         <>
            <div className='text-center' >
-            <h1 className='my-2 p-2'>Lista de Productos</h1>
+              <br></br>
+              <br></br>
+            <h1 className='my-2 p-5'>Lista de Productos</h1>
          <ListGroup>
             {
              props.productos.map((producto) =>( 
